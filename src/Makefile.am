@@ -68,7 +68,7 @@ snarfcppopts = $(DEFS) $(DEFAULT_INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS)
 .scm:
 	$(gx) punify -n $< > $@
 
-if MAINTAINER_MODE
+if MAINT_MODE
 
 noinst_DATA += all.tsar
 
@@ -81,7 +81,7 @@ libpq.tsar: libpq.c
 scheme.tsar: $(schemesource)
 	$(gx) tsar -f $@ -c utf-8 update $^
 
-endif # MAINTAINER_MODE
+endif # MAINT_MODE
 
 update-libsite-module-catalog:
 	$(GUILE_TOOLS) make-module-catalog \

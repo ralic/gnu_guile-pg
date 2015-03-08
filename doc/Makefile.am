@@ -36,7 +36,7 @@ EXTRA_DIST = ref.texh mkinc guile-pg.html
 EXTRA_DIST += coltypes.texi
 EXTRA_DIST += fdl.texi
 
-if MAINTAINER_MODE
+if MAINT_MODE
 
 SUFFIXES = .texh
 
@@ -72,6 +72,6 @@ coltypes.texi: $(top_srcdir)/src/postgres-types.scm
 	} > $@
 	rm -f $@T
 
-endif # MAINTAINER_MODE
+endif # MAINT_MODE
 
 # Makefile.am ends here

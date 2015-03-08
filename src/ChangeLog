@@ -1,3 +1,9 @@
+2015-03-08  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	[build] Replace ‘AM_MAINTAINER_MODE’ w/ ‘SNUGGLE_MAINT_MODE’.
+
+	* Makefile.am: Do ‘s/MAINTAINER_MODE/MAINT_MODE/g’.
+
 2015-02-23  Thien-Thi Nguyen  <ttn@gnuvola.org>
 
 	Release: 0.47 (tag v0.47)

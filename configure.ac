@@ -25,7 +25,7 @@ AM_INIT_AUTOMAKE([1.12.2 -Wall no-dist-gzip dist-xz serial-tests])
 
 AC_CONFIG_HEADERS([src/config.h])
 
-AM_MAINTAINER_MODE
+SNUGGLE_MAINT_MODE
 
 AC_ARG_ENABLE([cmod],[AS_HELP_STRING([--disable-cmod],
  [do not install (database postgres) as a shared object library;
