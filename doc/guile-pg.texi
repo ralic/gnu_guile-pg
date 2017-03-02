@@ -6,12 +6,14 @@
 @ifinfo
 @paragraphindent 0
 @end ifinfo
+@include relinfo.texi
 @c %**end of header
 @code{}
 @setchapternewpage odd
 
 @copying
-@include relinfo.texi
+This manual documents Guile-PG @value{VERSION}
+(released @value{RELDATE}).
 
 Copyright @copyright{} 2003--2015 Thien-Thi Nguyen@*
 Copyright @copyright{} 1998 Ian Grant
@@ -96,6 +98,7 @@ abstractions and convenience procedures.
 * Introspection::               Module: (database postgres-meta).
 * Easy Interaction::            Module: (database postgres-gxrepl).
 
+* Reporting Bugs::              When the going gets weird@dots{}
 * GNU FDL::
 * Index::
 @end menu
@@ -231,6 +234,34 @@ bindings so the connection will usually be closed soon after the body of the
 @c ---------------------------------------------------------------------------
 
 @include ref.texi
+
+@c ---------------------------------------------------------------------------
+@c ---------------------------------------------------------------------------
+@node    Reporting Bugs
+@chapter Reporting Bugs
+
+@cindex bugs, reporting
+@cindex reporting bugs
+Please send bug reports to @email{@value{BUGREPORT}}.
+Make sure to include the Guile-PG version in the subject line.
+
+If the bug is from a @code{make check} failure
+(i.e., the build directory is available),
+include the output of the @file{show-platform} script
+and the log file of the test that failed (all in subdir @file{test/}).
+
+Otherwise, include a small test case, a description of the expected
+behavior and a description of the actual behavior.
+If the maintainer can reproduce the problem using the test case,
+there is a good chance it can be resolved.
+
+@cindex homepage
+There is one known bug we can't do anything about (we tried but failed):
+The sourceforge folks don't want to update their site to point to the
+new Guile-PG homepage @url{http://www.nongnu.org/guile-pg/}.
+
+But if there are enough links to the new page, perhaps the
+relevancy of sourceforge's obstinance will decline over time.
 
 @c ---------------------------------------------------------------------------
 @c ---------------------------------------------------------------------------

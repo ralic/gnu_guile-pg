@@ -168,18 +168,5 @@ What Goes Where
 Reporting Bugs
 ==============
 
-  Please send bug reports to the address shown by running command:
-
-    ./configure --help
-
-  Include Guile-PG version, the output of the show-platform script,
-  and the log file of the test that failed (all in subdir "test").
-
-  There is one known bug we can't do anything about (we tried but
-  failed): The sourceforge folks don't want to update their site
-  to point to the new Guile-PG homepage:
-
-    http://www.nongnu.org/guile-pg/
-
-  But if there are enough links to the new page, perhaps the
-  relevancy of sourceforge's obstinance will decline over time.
+  See chapter Reporting Bugs in the manual.
+  (info "(guile-pg) Reporting Bugs")

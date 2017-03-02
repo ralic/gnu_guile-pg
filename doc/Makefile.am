@@ -26,8 +26,10 @@ guile_pg_TEXINFOS += coltypes.texi
 
 relinfo.texi: $(top_srcdir)/configure
 	@echo Creating $@
-	@echo "This manual documents $(PACKAGE_STRING)" > $@
-	@echo "(released `date +%Y-%m-%d -r $<`)." >> $@
+	@nice=`echo $(PACKAGE_BUGREPORT) | sed 's/@/@@/g'` ;	\
+	echo '@set BUGREPORT' "$$nice" > $@
+	@echo '@set VERSION $(PACKAGE_VERSION)' >> $@
+	@echo '@set RELDATE' `date +%Y-%m-%d -r $<` >> $@
 
 qcons-tables.texi: $(top_srcdir)/src/postgres-qcons.scm
 	$(srcdir)/mkinc $< > $@

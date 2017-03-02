@@ -1,3 +1,18 @@
+2017-03-02  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	[doc] Fix bug: Document bug reporting properly.
+
+	The README mentions how to go about reporting bugs,
+	but that method is only valid if the build directory
+	is still around.  Reported by Greg Troxel.
+
+	* doc/Makefile.am (relinfo.texi): Rewrite target actions to
+	create a series of Texinfo ‘@set’ commands; add ‘@set BUGREPORT’.
+	* doc/guile-pg.texi: Move inclusion of relinfo.texi
+	out of the ‘@copying’ block and into the "header".
+	(Top): Add "Reporting Bugs" to menu.
+	(Reporting Bugs): New chapter.
+
 2015-03-08  Thien-Thi Nguyen  <ttn@gnuvola.org>
 
 	[build] Replace ‘AM_MAINTAINER_MODE’ w/ ‘SNUGGLE_MAINT_MODE’.
