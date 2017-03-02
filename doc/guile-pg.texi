@@ -15,7 +15,7 @@
 This manual documents Guile-PG @value{VERSION}
 (released @value{RELDATE}).
 
-Copyright @copyright{} 2003--2015 Thien-Thi Nguyen@*
+Copyright @copyright{} 2003--2015, 2017 Thien-Thi Nguyen@*
 Copyright @copyright{} 1998 Ian Grant
 
 @quotation
